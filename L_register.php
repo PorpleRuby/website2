@@ -17,7 +17,7 @@
             <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
             <button type="submit">Register</button>
         </form>
-        <a href="L_login.html" class="link">Already have an account? Login here</a>
+        <a href="L_login.php" class="link">Already have an account? Login here</a>
         <p id="error-message" style="color: red; display: none;"></p>
         <p id="success-message" style="color: green; display: none;"></p>
     </div>

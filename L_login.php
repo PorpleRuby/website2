@@ -15,7 +15,7 @@
             <input type="password" id="password" placeholder="Password" required>
             <button type="submit">Login</button>
         </form>
-        <a href="L_register.html" class="link">Create an Account</a>
+        <a href="L_register.php" class="link">Create an Account</a>
         <p id="error-message" style="color: red; display: none;"></p>
     </div>
 
