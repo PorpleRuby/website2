@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="css/L_login.css">
 </head>
 <body>
+  <?php 
+    if(isset($_SESSION['status'])) {
+      echo "<h5 class='alert alert-success'>".$_SESSION['status']."</h5>";
+      unset($_SESSION['status']);
+    }
+  ?>
     <div class="login-container">
         <h2>Login</h2>
         <form id="loginForm">
@@ -27,3 +33,27 @@
     <script src="js/L_login.js"></script>
 </body>
 </html>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAfrqEIM6iywN7yVHcEvrDP1xduUvF_8o8",
+    authDomain: "se2-dhre-bmre-sample.firebaseapp.com",
+    projectId: "se2-dhre-bmre-sample",
+    storageBucket: "se2-dhre-bmre-sample.firebasestorage.app",
+    messagingSenderId: "265567351937",
+    appId: "1:265567351937:web:9d9924eca4e8a54c890980",
+    measurementId: "G-2S8HHHG44S"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
