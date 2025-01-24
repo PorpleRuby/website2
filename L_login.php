@@ -46,6 +46,7 @@
   const firebaseConfig = {
     apiKey: "AIzaSyAfrqEIM6iywN7yVHcEvrDP1xduUvF_8o8",
     authDomain: "se2-dhre-bmre-sample.firebaseapp.com",
+    databaseURL: "https://se2-dhre-bmre-sample-default-rtdb.asia-southeast1.firebasedatabase.app",
     projectId: "se2-dhre-bmre-sample",
     storageBucket: "se2-dhre-bmre-sample.firebasestorage.app",
     messagingSenderId: "265567351937",
